@@ -1,0 +1,28 @@
+Boutique management System:
+We are going to implement boutique management system. Designer will able to sell her products to the customers through this management system. 
+This will include following tables: 
+mysql> create table Designer(user_id int primary key,name varchar(50),email varchar(20),password varchar(50),address varchar(50),phone_no int);
+Query OK, 0 rows affected (0.06 sec)50),address varchar(50),phone_no
+mysql> create table products(prod_id int primary key,name varchar(50),price int,quantity int,sales int);
+Query OK, 0 rows affected (0.07 sec)
+mysql> create table Customer(cust_id int primary key,name varchar(50),email varchar(20),password varchar(50),address varchar(50),phone_no int);
+Query OK, 0 rows affected (0.09 sec)
+mysql> create table orders(o_id int primary key,net_amount int,tax int,total_amount int,date varchar(30),quantity int);
+Query OK, 0 rows affected (0.08 sec)
+mysql> create table categories(cat_id int primary key,cat_name varchar(30));
+Query OK, 0 rows affected (0.07 sec)
+
+show tables;
++-------------------------------+
+| Tables_in_boutiqe_mgmt_system |
++-------------------------------+
+| Customer                      |
+| Designer                      |
+| categories                    |
+| orders                        |
+| products                      |
++-------------------------------+
+
+Submitted by:
+Asma Haroon 1314
+Sajida Bibi 1304
